@@ -100,7 +100,23 @@
   - When to use those ?
     - When we have a set of options (defined) - An ideal for SWITCH case
 
+- Decorator
+- Support Annotating or modifying classes and class members.
+- Decorator provide a way tp add both annotations and a meta-programming syntax for class declarations and members
+- It can be attached to Class, Method, Accessor Property, or Parameters - @expression
+- Decorators are basically a Function
+- Example
+
+  - We create a Target Class where we want to use it
+    class Manager {  
+     @watchChange someProperty: string;
+    }
+
+  - We create a Decorator function - here `target` will be our Manager Class not its instance and the `key` is the name of the property
+    function watchChange(target: any, key: string) {}
+
 - KEYWORDS
   - TypeScript - Composing Types (Conditional types) v/s Generic Types
   - Type Alias v/s Interfaces
   - Leteral Types and Literal Inference
+  - Decorator - Annotations and Meta Programming Syntax for Class Declarations and Members
