@@ -1,1 +1,1 @@
-{"version":3,"file":"Launcher.js","sourceRoot":"","sources":["../src/Launcher.ts"],"names":[],"mappings":";AAAA,MAAM,QAAQ;IACL,SAAS;QACd,OAAO,CAAC,GAAG,CAAC,aAAa,CAAC,CAAC;IAC7B,CAAC;CACF;AAED,IAAI,QAAQ,EAAE,CAAC,SAAS,EAAE,CAAC"}
+{"version":3,"file":"Launcher.js","sourceRoot":"","sources":["../src/Launcher.ts"],"names":[],"mappings":";;AAAA,qCAAkC;AAElC,MAAM,QAAQ;IAAd;QACU,WAAM,GAAW,IAAI,eAAM,EAAE,CAAC;IAKxC,CAAC;IAJQ,SAAS;QACd,OAAO,CAAC,GAAG,CAAC,aAAa,CAAC,CAAC;QAC3B,IAAI,CAAC,MAAM,CAAC,aAAa,EAAE,CAAC;IAC9B,CAAC;CACF;AAED,IAAI,QAAQ,EAAE,CAAC,SAAS,EAAE,CAAC"}

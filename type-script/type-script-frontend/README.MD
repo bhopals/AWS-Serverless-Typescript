@@ -2,12 +2,8 @@
 
 - Initialize Node Project - `npm init -y`
 - Add Typescript config - `tsc --init`
-- Install node types as Dev dependency - `npm i -D @types/node`
-- Create Server and Index files
-- Install npm packages - `npm i -D typescript ts-node`
-- Modify/Add npm start script - `start: ts-node src/Index.ts`
-- Debugging - Add/Modify Launch.json to -
-  "configurations": [
-  {"type": "node", "request": "launch", "name": "Debug Server","runtimeArgs": ["-r","ts-node/register"], "args": ["${workspaceFolder}/type-script/type-script-demo/Index.ts"]
-  }
-  ]
+- Create Launcher.ts
+- Create Index.html and add script - `dist/Launcher.js`
+- Add livesever configurations - .vscode/settings.json - {"liveServer.settings.file": "index.html"}
+- Why do we need webpack - Because Browser will not let you reference another Javascript file into one, hence we require a module bundler
+  that can bundle our whole source code in one file
