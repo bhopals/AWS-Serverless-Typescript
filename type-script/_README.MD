@@ -20,6 +20,18 @@
 - The Type definition (TS) does not Exists at RUNTIME
 
 - Type Guards
-- interface have one drawback that they do not exist during the RUNTIME of the code, means if we dynamically gets an Object
-  from an external service, such as REST API, we have to DO SOME CHECKS to make sure it is the RIGHT TYPE
-- To do that, we usually use TYPE GUARDS - Use "in" operations = 'firstName' in Person
+
+  - interface have one drawback that they do not exist during the RUNTIME of the code, means if we dynamically gets an Object
+    from an external service, such as REST API, we have to DO SOME CHECKS to make sure it is the RIGHT TYPE
+  - To do that, we usually use TYPE GUARDS - Use "in" operations = 'firstName' in Person
+  - To dynamically check the inputs that we receive from outside
+  - The IN Operator returns true if the specified property is in the specified object or its prototype chain.
+
+- Typescript Compiler options
+  - one way (use Command Line and pass all the options as command)
+    - `tsc <file-name>.ts` && `node <file-name>.js`
+    - `tsc <file-name>.ts --watch` && `node <file-name>.js`
+    - `ts-node <file-name>.ts` (Manual Way)
+  - second way (use tsconfig.json )
+    - To generate default tsconfig - `tsc --init`
+    - delete all default generated options (refer `generated-tsconfig.txt` for all the options)
