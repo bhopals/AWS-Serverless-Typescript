@@ -1,4 +1,4 @@
-#### STEPS - BACKEND
+#### STEPS - FRONTEND
 
 - Initialize Node Project - `npm init -y`
 - Add Typescript config - `tsc --init`
