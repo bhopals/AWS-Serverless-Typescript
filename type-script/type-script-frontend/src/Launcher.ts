@@ -1,10 +1,10 @@
-import { Router } from "./Router";
+import { Route } from "./Route";
 
 class Launcher {
-  private router: Router = new Router();
+  private route: any = new Route();
   public launchApp() {
     console.log("App started");
-    this.router.handleRequest();
+    this.route.handleRequest();
   }
 }
 
