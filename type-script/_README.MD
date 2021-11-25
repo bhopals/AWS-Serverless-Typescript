@@ -41,3 +41,7 @@
     - In CompilerOptions, make sure to add `lib: ["DOM"]` or any other library declaration files that describe the target runtime environment.
 
 - Classes
+  - It is a Syntatical Sugar
+  - It can have constructor, instance variables, instance methods, static variables, static methods
+  - ACCESS MODIFIER (private, public, protected) - default public
+  - However, in Typescript you could still use private, protected instance variables using `<> as any`
