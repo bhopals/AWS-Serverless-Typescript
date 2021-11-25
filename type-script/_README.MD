@@ -65,7 +65,28 @@
     It could lead to a large hierarchy of classes that depend on each other, which is fragile.
 
 - Static
+
   - Static methods and access modifiers
   - Static methods can mutate static properties
   - Static members can't be accessed by object instances
   - In Typescript, usually we use static methods in UTILITY class
+
+- Generics
+
+  - Provides an ability to pass a Range of Types to a Components. Adding an extra layer of abstraction
+  - Here T, V etc are Generic Types (can use any Names)
+  - function identity<T>(arg: T): T {return arg;}
+  - function identity<T, V>(argT: T, argV: V): T {return argT;}
+  - function identity<T, V>(argT: T, argV: V): [T, V] {return [argT, argV];}
+  - We can have a GENERIC Interface as well as a GENERIC Class
+  - Type Argument Inference
+  - Generics are purely a development safety net for compile time that will ensure type safe abstraction of your code.
+  - More Details Refer - https://rossbulat.medium.com/typescript-generics-explained-15c6493b510f
+  - TypeScript - Composing Types (Conditional types) v/s Generic Types
+  - Type Alias v/s Interfaces
+  - Leteral Types and Literal Inference
+
+- KEYWORDS
+  - TypeScript - Composing Types (Conditional types) v/s Generic Types
+  - Type Alias v/s Interfaces
+  - Leteral Types and Literal Inference
