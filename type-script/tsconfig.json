@@ -3,6 +3,10 @@
     "lib": ["DOM", "ES6"],
     "target": "ES2019",
     "rootDir": "src",
-    "outDir": "dist"
+    "outDir": "dist",
+    "baseUrl": "src",
+    "paths": {
+      "@components/*": ["data/components/*"]
+    }
   }
 }

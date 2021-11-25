@@ -1,3 +1,8 @@
+export interface IServer {
+  startServer(): void;
+  stopServer(): void;
+}
+
 // Class
 class Server {
   //Instance Variable - Attached to the Class Instance (this) - Default ACCESS MODIFIER Public
