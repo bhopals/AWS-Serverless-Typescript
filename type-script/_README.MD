@@ -35,3 +35,6 @@
   - second way (use tsconfig.json )
     - To generate default tsconfig - `tsc --init`
     - delete all default generated options (refer `generated-tsconfig.txt` for all the options)
+    - add compiler options - { compilerOptions: { roorDir: 'src', outDir: 'dist'}}
+    - run `tsc` - once the command finished execution, you will find generated JS files in the `dist` folder
+    - In CompilerOptions, make sure to add `lib: ["DOM"]` or any other library declaration files that describe the target runtime environment.
