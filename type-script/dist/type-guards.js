@@ -3,7 +3,7 @@ function generateEmailTG(person) {
         return undefined;
     }
     else {
-        return "".concat(person.firstName).concat(person.lastName, "@gmail.com");
+        return `${person.firstName}${person.lastName}@gmail.com`;
     }
 }
 function isPerson(potentialPerson) {

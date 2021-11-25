@@ -28,6 +28,7 @@
   - The IN Operator returns true if the specified property is in the specified object or its prototype chain.
 
 - Typescript Compiler options
+
   - one way (use Command Line and pass all the options as command)
     - `tsc <file-name>.ts` && `node <file-name>.js`
     - `tsc <file-name>.ts --watch` && `node <file-name>.js`
@@ -38,3 +39,5 @@
     - add compiler options - { compilerOptions: { roorDir: 'src', outDir: 'dist'}}
     - run `tsc` - once the command finished execution, you will find generated JS files in the `dist` folder
     - In CompilerOptions, make sure to add `lib: ["DOM"]` or any other library declaration files that describe the target runtime environment.
+
+- Classes
