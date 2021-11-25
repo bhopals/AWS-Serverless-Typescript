@@ -1,3 +1,4 @@
+"use strict";
 // You cannnot instantiate abstract class - And it may or may have abstract methods as well
 class BaseAbstarctServer {
     constructor(port, address) {

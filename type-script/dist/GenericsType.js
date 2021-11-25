@@ -1,3 +1,4 @@
+"use strict";
 // Type Argument Inference
 function getObjectKeys0(arg0, arg1) {
     return [arg0, arg1];

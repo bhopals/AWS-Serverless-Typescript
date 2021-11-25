@@ -1,3 +1,4 @@
+"use strict";
 class BaseIServer {
     constructor(port, address) {
         this.port = port;

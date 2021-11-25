@@ -1,3 +1,4 @@
+"use strict";
 function generateEmail(input) {
     return `${input.firstName} ${input.lastName}@email.com`;
 }

@@ -1,3 +1,4 @@
+"use strict";
 class BaseServer {
     constructor(port, address) {
         this.isUserType = true;

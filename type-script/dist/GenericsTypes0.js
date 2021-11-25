@@ -1,3 +1,4 @@
+"use strict";
 function returnKeys(arg0) {
     console.log("arg0>", arg0);
     return arg0;

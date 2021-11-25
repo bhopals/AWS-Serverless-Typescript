@@ -1,3 +1,4 @@
+"use strict";
 const userName = "BHOPAL";
 console.log(`Hello ${userName}`);
 // Regular Way

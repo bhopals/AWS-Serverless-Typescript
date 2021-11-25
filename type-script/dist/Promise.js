@@ -1,3 +1,4 @@
+"use strict";
 // Class
 class PServer {
     constructor(port, address) {

@@ -1,3 +1,4 @@
+"use strict";
 function generateEmailTG(person) {
     if (person.isVisitor) {
         return undefined;
