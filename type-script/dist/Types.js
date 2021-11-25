@@ -17,3 +17,9 @@ let someSensitiveData;
 if (typeof input === "string") {
     someSensitiveData = input;
 }
+function doTasks(tasks) {
+    if (tasks > 3) {
+        throw new Error("Too many Tasks!!");
+    }
+}
+const stuff = doTasks(2);

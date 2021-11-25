@@ -95,6 +95,11 @@
   - String Property Intilizer - `"strictPropertyInitialization": true` - Make sure properties are initialized
   - Enable All Strict Checks - `"strict": true`
 
+- ENUM
+
+  - When to use those ?
+    - When we have a set of options (defined) - An ideal for SWITCH case
+
 - KEYWORDS
   - TypeScript - Composing Types (Conditional types) v/s Generic Types
   - Type Alias v/s Interfaces
