@@ -7,6 +7,10 @@ class Server {
     //   }
     //Constructor
     constructor(port, address) {
+        this.isClient = true;
+        //Private Instance Variables
+        this.userType1 = true;
+        this.userType2 = true; // Only accessible to the Instance/Class that extends Server - All the Child classes can access
         this.port = port;
         this.address = address;
     }

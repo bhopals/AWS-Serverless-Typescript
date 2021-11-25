@@ -7,6 +7,11 @@
     "baseUrl": "src",
     "paths": {
       "@components/*": ["data/components/*"]
-    }
+    },
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "strict": true
   }
 }

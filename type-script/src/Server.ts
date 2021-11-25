@@ -8,11 +8,11 @@ class Server {
   //Instance Variable - Attached to the Class Instance (this) - Default ACCESS MODIFIER Public
   port: number;
   address: string;
-  isClient: boolean;
+  isClient: boolean = true;
 
   //Private Instance Variables
-  private userType1: boolean;
-  protected userType2: boolean; // Only accessible to the Instance/Class that extends Server - All the Child classes can access
+  private userType1: boolean = true;
+  protected userType2: boolean = true; // Only accessible to the Instance/Class that extends Server - All the Child classes can access
 
   //Constructor
   //   constructor(private port: number, private address: string) {

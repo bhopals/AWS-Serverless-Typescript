@@ -86,6 +86,15 @@
   - Type Alias v/s Interfaces
   - Leteral Types and Literal Inference
 
+- Strict Checks
+
+  - Always Strict - `alwaysStrict`
+  - No Implicit Any - `"noImplicitAny": true` - If there is `any` type then we need to define it implicitly
+  - No Implicit This - `"noImplicitThis": true` - To avoid `this` undefined in nested function - Typescript will complain
+  - Strict Null Check - `"strictNullChecks": true` - Will Complain if in any method we do not use Null/Undefined check before using it
+  - String Property Intilizer - `"strictPropertyInitialization": true` - Make sure properties are initialized
+  - Enable All Strict Checks - `"strict": true`
+
 - KEYWORDS
   - TypeScript - Composing Types (Conditional types) v/s Generic Types
   - Type Alias v/s Interfaces
