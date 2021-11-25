@@ -3,3 +3,6 @@
 - Initialize Node Project - `npm init -y`
 - Add Typescript config - `tsc --init`
 - Install node types as Dev dependency - `npm i -D @types/node`
+- Create Server and Index files
+- Install npm packages - `npm i -D typescript ts-node`
+- Modify/Add npm start script - `start: ts-node src/Index.ts`
