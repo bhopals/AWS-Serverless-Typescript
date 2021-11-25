@@ -10,5 +10,6 @@ export class Server {
       res.write("Hello from TS server");
       res.end();
     }).listen(8080);
+    console.log("Server started!!");
   }
 }
