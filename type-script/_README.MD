@@ -18,3 +18,8 @@
   - OR with using `ts-node <file-name>.ts` (Contert TS into JS and RUN JS file)
 
 - The Type definition (TS) does not Exists at RUNTIME
+
+- Type Guards
+- interface have one drawback that they do not exist during the RUNTIME of the code, means if we dynamically gets an Object
+  from an external service, such as REST API, we have to DO SOME CHECKS to make sure it is the RIGHT TYPE
+- To do that, we usually use TYPE GUARDS - Use "in" operations = 'firstName' in Person
