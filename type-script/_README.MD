@@ -111,9 +111,15 @@
     class Manager {  
      @watchChange someProperty: string;
     }
-
   - We create a Decorator function - here `target` will be our Manager Class not its instance and the `key` is the name of the property
-    function watchChange(target: any, key: string) {}
+    function watchChange(target: any, key: string) {} // Refer - typescript-decorator/Decorator.ts
+  - Two ways to call decorator
+    - Use @<decorator-name> on the Class, Method, Parameter (whereever you want to apply)
+      @watchChange
+      someProperty: string
+    - call decorator as method
+      watchChange(<Class>.prototype, '<property-name>')
+      watchChange(Manager.prototype, 'someProperty')
 
 - KEYWORDS
   - TypeScript - Composing Types (Conditional types) v/s Generic Types
