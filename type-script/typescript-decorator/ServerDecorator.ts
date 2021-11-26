@@ -6,6 +6,7 @@ interface IServer {
 function logInvocation(
   target: any,
   propertyKey: string,
+
   description: PropertyDescriptor
 ) {
   const className = target.constructor.name;
@@ -19,7 +20,7 @@ function logInvocation(
   };
 }
 
-class BaseIServer implements IServer {
+class BaseIDServer implements IServer {
   public port: number;
   public address: string;
 
@@ -44,5 +45,5 @@ class BaseIServer implements IServer {
 }
 
 // Programming By Interface
-const baseIServer: IServer = new BaseIServer(8080, "localhost");
+const baseIServer: IServer = new BaseIDServer(8080, "localhost");
 baseIServer.startServer();
