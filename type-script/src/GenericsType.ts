@@ -6,7 +6,7 @@ type State = {
   submitted?: boolean;
 };
 
-// Type Argument Inference
+// Type Argument Inference - Could be multiple
 function getObjectKeys0<Props, State>(
   arg0: Props,
   arg1: State
@@ -16,6 +16,7 @@ function getObjectKeys0<Props, State>(
 
 function getObjectKeys1<T>(arg0: T): T {
   console.log("arg0>", arg0);
+
   return arg0;
 }
 
