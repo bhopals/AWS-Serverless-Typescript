@@ -2,6 +2,7 @@ interface PersonTG {
   firstName: string;
   lastName: string;
   isVisitor?: boolean;
+  isLoggedIn?: boolean;
 }
 
 function generateEmailTG(person: PersonTG): string | undefined {
@@ -29,4 +30,5 @@ function printEmailIfPerson(potentialPerson: any): void {
 }
 
 printEmailIfPerson({ firstName: "John", lastName: "Doe" }); // JohnDoe@gmail.com
+
 printEmailIfPerson({ firstName: "John", lastName_: "Doe" }); // input is not a Person
