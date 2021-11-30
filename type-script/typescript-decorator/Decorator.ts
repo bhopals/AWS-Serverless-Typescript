@@ -53,6 +53,8 @@ class Manager {
 
 const manager: Manager = new Manager();
 manager.someProperty = "123";
+
 console.log("someObject.someProperty:" + someObject.someProperty);
 manager.someProperty = "456";
+
 console.log("someObject.someProperty:" + someObject.someProperty);
