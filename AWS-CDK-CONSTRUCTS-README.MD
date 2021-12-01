@@ -17,3 +17,4 @@
 - `npm init app --language typescript`
 - `cdk sync` - Generate Cloudformation template from CDK Construct
 - `cdk bootstrap` - It will create a CloudFormation Stack in our AWS Account
+- `cdk deploy` - Deploy the stack to AWS account
