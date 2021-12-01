@@ -1,0 +1,6 @@
+
+> npm i -g aws-cdk  (Install `aws-cdk` globally)
+
+> cdk --version (Get the `cdk` version)
+
+> cdk init app --language typescript (Initialize CDK project)
