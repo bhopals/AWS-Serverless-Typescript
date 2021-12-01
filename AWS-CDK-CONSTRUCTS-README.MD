@@ -15,3 +15,5 @@
 
 - create a directory in which you want to init your project
 - `npm init app --language typescript`
+- `cdk sync` - Generate Cloudformation template from CDK Construct
+- `cdk bootstrap` - Bootstrap the environment
