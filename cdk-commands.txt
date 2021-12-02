@@ -17,3 +17,9 @@
 > cdk bootstrap (Bootstrap the project - Only run the very first time you to init/bootstrap the stack and should be good  - It will create a CloudFormation Stack in our AWS Account)
 
 > cdk deploy (Deploy the stack to AWS account)
+
+
+
+
+REFERENCE
+- https://cdkworkshop.com/20-typescript.html
