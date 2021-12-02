@@ -76,6 +76,14 @@ You can use the cdk bootstrap command to install the bootstrap stack into an env
 - Even Higher Level - Patterns - Involves mutliple kinds of Resources - Group of Construct
 - More Details - https://docs.aws.amazon.com/cdk/latest/guide/constructs.html
 
+- CloudFormation Output - use `CfnOutput`
+  new CfnOutput(this, "myBucket", {
+  value: myBucket.bucketName,
+  });
+  Outputs: CdkApplicationTemplateStack.myBucket = cdkapplicationtemplatestack-somebucket8b32029d-1qqofot3pwy6w
+
+  - The value would be in CloudFormation `output` section
+
 REFERENCE
 
 - AWS Typescript Workshop - https://cdkworkshop.com/20-typescript.html
