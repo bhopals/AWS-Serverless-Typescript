@@ -6,7 +6,7 @@ export class CdkApplicationTemplateStack extends cdk.Stack {
     super(scope, id, props);
 
     new Bucket(this, "someBucket", {
-      lifecycleRules: [{ expiration: Duration.days(5) }],
+      lifecycleRules: [{ expiration: Duration.days(10) }],
     });
   }
 }

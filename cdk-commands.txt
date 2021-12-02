@@ -22,4 +22,5 @@
 
 
 REFERENCE
-- https://cdkworkshop.com/20-typescript.html
+- AWS Typescript Workshop - https://cdkworkshop.com/20-typescript.html
+- AWS Construct Libraries - https://docs.aws.amazon.com/cdk/api/latest/docs/aws-construct-library.html

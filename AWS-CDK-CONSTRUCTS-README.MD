@@ -27,6 +27,10 @@ You can use the cdk bootstrap command to install the bootstrap stack into an env
 
 - `cdk deploy` - Deploy the stack to AWS account. Add/Remove/Update AWS Resources
 
+  - CDK deploy is the only command that you need to run everytime when you change your Construct and want to Deploy the Changes.
+  - Use `cdk deploy --all` if you have multiple Stacks and want to deploy all
+  - Use `cdk deploy <stack-name/id>` if you just want to deploy specific stack only
+
 - `cdk init app --language typescript` (Initialize CDK project)
   Available templates:
 
@@ -51,3 +55,21 @@ You can use the cdk bootstrap command to install the bootstrap stack into an env
 
   - sample-app: Example CDK Application with some constructs
     └─ cdk init sample-app --language=[csharp|fsharp|go|java|javascript|python|typescript]
+
+- Other CDK Commands
+
+  - `cdk list` - List out all the stacks
+  - `cdk diff` - Compare the local stack v/s deployed stack
+  - `cdk destroy` - To delete the Stack/AWS Resources
+  - `cdk doctor` - Will show if there are any problems in our stack
+
+- CDK Construct - A CDK Application consist of one or more Construct.
+  When someone says construct, it means A class that can be initialized using Construct and acceptin <scope> as a construct.
+  - @aws-cdk/aws-s3 - It is an S3 Construct Library
+    - A Construct library can have `CFN-RESOURCES` and `CFN-CONSTRUCTS`
+  - @aws-cdk/aws-sqs - It is a SQS Construct Library
+
+REFERENCE
+
+- AWS Typescript Workshop - https://cdkworkshop.com/20-typescript.html
+- AWS Construct Libraries - https://docs.aws.amazon.com/cdk/api/latest/docs/aws-construct-library.html
