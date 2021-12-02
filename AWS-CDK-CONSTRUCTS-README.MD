@@ -14,10 +14,18 @@
 ### Init First CDK Project
 
 - create a directory in which you want to init your project
+
 - `npm init app --language typescript`
-- `cdk sync` - Generate Cloudformation template from CDK Construct
+
+- `cdk synth` - Generate Cloudformation template from CDK Application.
+  AWS CDK apps are effectively only a definition of your infrastructure using code. When CDK apps are executed, they produce (or “synthesize”, in CDK parlance) an AWS CloudFormation template for each stack defined in your application. To synthesize (produce a code equivalent CloudFormation Template) a CDK app, use the cdk synth
+
 - `cdk bootstrap` - It will create a CloudFormation Stack in our AWS Account
-- `cdk deploy` - Deploy the stack to AWS account
+  The first time you deploy an AWS CDK app into an environment (account/region), you can install a “bootstrap stack”. This stack includes resources that are used in the toolkit’s operation. For example, the stack includes an S3 bucket that is used to store templates and assets during the deployment process.
+
+You can use the cdk bootstrap command to install the bootstrap stack into an environment: `cdk bootdtrap`
+
+- `cdk deploy` - Deploy the stack to AWS account. Add/Remove/Update AWS Resources
 
 - `cdk init app --language typescript` (Initialize CDK project)
   Available templates:
