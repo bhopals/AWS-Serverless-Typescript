@@ -1,14 +1,14 @@
 import * as cdk from '@aws-cdk/core';
 // import * as sqs from '@aws-cdk/aws-sqs';
 
-export class AwsCdkConstructsStack extends cdk.Stack {
+export class CdkApplicationTemplateStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
     // The code that defines your stack goes here
 
     // example resource
-    // const queue = new sqs.Queue(this, 'AwsCdkConstructsQueue', {
+    // const queue = new sqs.Queue(this, 'CdkApplicationTemplateQueue', {
     //   visibilityTimeout: cdk.Duration.seconds(300)
     // });
   }

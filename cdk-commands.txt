@@ -4,6 +4,13 @@
 > cdk --version (Get the `cdk` version)
 
 > cdk init app --language typescript (Initialize CDK project)
+    Available templates:
+    * app: Template for a CDK Application
+    └─ cdk init app --language=[csharp|fsharp|go|java|javascript|python|typescript]
+    * lib: Template for a CDK Construct Library
+    └─ cdk init lib --language=typescript
+    * sample-app: Example CDK Application with some constructs
+    └─ cdk init sample-app --language=[csharp|fsharp|go|java|javascript|python|typescript]
 
 > cdk synth (Generate Cloudformation Template)
 
