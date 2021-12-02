@@ -84,6 +84,20 @@ You can use the cdk bootstrap command to install the bootstrap stack into an env
 
   - The value would be in CloudFormation `output` section
 
+- CfnParameter - For Input parameter pass down to the Stack
+  const duration = new CfnParameter(this, "duration", {
+  type: "Number",
+  minValue: 1, //Validation - Wont allow less than 1
+  maxValue: 10, //Validation - Wont allow more that 10
+  default: 6, //if null or undefined, set 6
+  });
+  const myBucket = new Bucket(this, "someBucket", {
+  lifecycleRules: [{ expiration: Duration.days(duration.valueAsNumber) }],
+  });
+
+  `cdk deploy --parameters duration=5`
+  `cdk deploy --parameters duration=11` // Error - Parameter 'duration' must be a number not greater than 10
+
 REFERENCE
 
 - AWS Typescript Workshop - https://cdkworkshop.com/20-typescript.html
