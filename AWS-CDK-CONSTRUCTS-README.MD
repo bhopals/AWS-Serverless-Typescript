@@ -65,9 +65,16 @@ You can use the cdk bootstrap command to install the bootstrap stack into an env
 
 - CDK Construct - A CDK Application consist of one or more Construct.
   When someone says construct, it means A class that can be initialized using Construct and acceptin <scope> as a construct.
+
   - @aws-cdk/aws-s3 - It is an S3 Construct Library
     - A Construct library can have `CFN-RESOURCES` and `CFN-CONSTRUCTS`
   - @aws-cdk/aws-sqs - It is a SQS Construct Library
+
+- AWS Constructs (Three Types)
+- L1 Construct - Low Level Construct - CFN Resources
+- L2 Construct - Higher Level Construct - Intent-Based API - Per Resource One Construct (This is what We are Mostly be using )
+- Even Higher Level - Patterns - Involves mutliple kinds of Resources - Group of Construct
+- More Details - https://docs.aws.amazon.com/cdk/latest/guide/constructs.html
 
 REFERENCE
 
