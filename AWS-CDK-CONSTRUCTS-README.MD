@@ -96,6 +96,7 @@ You can use the cdk bootstrap command to install the bootstrap stack into an env
   });
 
   `cdk deploy --parameters duration=5`
+
   `cdk deploy --parameters duration=11` // Error - Parameter 'duration' must be a number not greater than 10
 
 - Debugging issue - Always prefer to look into `aws-cdk` github page for known issues or enhancements - https://github.com/aws/aws-cdk/issues
