@@ -9,7 +9,7 @@ export class CdkApplicationTemplateStack extends cdk.Stack {
       type: "Number",
       minValue: 1,
       maxValue: 10,
-      default: 6,
+      default: 5,
     });
 
     const myBucket = new Bucket(this, "someBucket", {
