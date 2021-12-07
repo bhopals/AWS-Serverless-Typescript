@@ -104,4 +104,5 @@ You can use the cdk bootstrap command to install the bootstrap stack into an env
 REFERENCE
 
 - AWS Typescript Workshop - https://cdkworkshop.com/20-typescript.html
+
 - AWS Construct Libraries - https://docs.aws.amazon.com/cdk/api/latest/docs/aws-construct-library.html
