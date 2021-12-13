@@ -121,6 +121,23 @@
       watchChange(<Class>.prototype, '<property-name>')
       watchChange(Manager.prototype, 'someProperty')
 
+TypeScripts Features
+
+- Mapped Type
+
+  - example
+    interface Warrior {
+    name: string;
+    weapon: string;
+    strength: number;
+    }
+    type Category<T> = {
+    [P in keyof T]?: T[P]
+    }
+
+    type Samurai = Category<Warrior>;
+    //Will only allow Samurai to have these properties only
+
 - KEYWORDS
   - TypeScript - Composing Types (Conditional types) v/s Generic Types
   - Type Alias v/s Interfaces
