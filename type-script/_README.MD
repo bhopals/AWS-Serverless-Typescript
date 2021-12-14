@@ -138,6 +138,8 @@ TypeScripts Features
     type Samurai = Category<Warrior>;
     //Will only allow Samurai to have these properties only
 
+    getMethod<T>(arg: T[]): T{}
+
 - KEYWORDS
   - TypeScript - Composing Types (Conditional types) v/s Generic Types
   - Type Alias v/s Interfaces
