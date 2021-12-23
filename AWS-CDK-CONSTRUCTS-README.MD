@@ -105,18 +105,29 @@ You can use the cdk bootstrap command to install the bootstrap stack into an env
 
 - Understanding AWS Cognito
 
-  - User Pools
+  - User Pools - User Directories that provide sign-up and sign-in options for your app users.
 
     - Stores User Data
     - Basic Authentication Solution - JWT Tokens
 
     - FLOW
-    - User submits an username and password combination to Amanzon Cognito
-    - Cognito validates the credential
-    - If successful validation, Cognito returns a JWT Token (timely expired)
-    - User could use this JWT Token to access the secured API's
 
-  - Identity Pools
+      - User submits an username and password combination to Amanzon Cognito
+      - Cognito validates the credential
+      - If successful validation, Cognito returns a JWT Token (timely expired)
+      - User could use this JWT Token to access the secured API's
+
+    - Create a User Pool (Options and Features)
+      - Add Name, Atrtributes, MFA Verifications, Messaging, Tags, Devices, App Clients
+      - Also, can add Lambda Triggers - Pre sign-up, Pre Authentication, Post Authentication, Create/Verify Auth Challange, Pre Token Generation
+      - Once created It will gives a Pool ID `pool-id`
+      - After Creation, we need to perform APP Integration
+        - App Domain Name
+        - Create App Client
+        - This will give an `app-client-id`
+      - The generated `pool-id` and `app-client-id` would be used to Authentication
+
+  - Identity Pools - It provides AWS Credential to grant your users access to Other AWS Services
     - Fine grained Access Control - a user assumes an Identity
     - Can directly call AWS SDK Commands
 
