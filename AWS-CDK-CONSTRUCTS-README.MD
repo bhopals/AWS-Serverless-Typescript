@@ -101,6 +101,30 @@ You can use the cdk bootstrap command to install the bootstrap stack into an env
 
 - Debugging issue - Always prefer to look into `aws-cdk` github page for known issues or enhancements - https://github.com/aws/aws-cdk/issues
 
+#### Securing API's with AWS Cognito
+
+- Understanding AWS Cognito
+
+  - User Pools
+
+    - Stores User Data
+    - Basic Authentication Solution - JWT Tokens
+
+    - FLOW
+    - User submits an username and password combination to Amanzon Cognito
+    - Cognito validates the credential
+    - If successful validation, Cognito returns a JWT Token (timely expired)
+    - User could use this JWT Token to access the secured API's
+
+  - Identity Pools
+    - Fine grained Access Control - a user assumes an Identity
+    - Can directly call AWS SDK Commands
+
+- First Contact with Cognito
+- User Pools
+- Understand JWT Tokens
+- Groups
+
 REFERENCE
 
 - AWS Typescript Workshop - https://cdkworkshop.com/20-typescript.html
