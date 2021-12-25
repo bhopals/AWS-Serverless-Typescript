@@ -195,7 +195,7 @@ You can use the cdk bootstrap command to install the bootstrap stack into an env
         - For Unauthenticated Identities
 
       - CREATE IDENTITY POOL
-      - Once created, it generates `Identity Pool ID`
+      - Once this is created, it generates `Identity Pool ID`
 
       - If we have selected `Cognito` as Authentication Provider
         - Go to that section
