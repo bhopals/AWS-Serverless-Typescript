@@ -187,7 +187,7 @@ You can use the cdk bootstrap command to install the bootstrap stack into an env
           determine the level of access you want your application end users to have to your AWS resources. Identity pools define two types of Identities: `authentication` and `unauthenticated`. Each can be assigned their own role in IAM. `Authenticated` identities belong to users who are authenticated by a Public Login Provider (Amazon Cognito User Pools, Facebook, Google, Twitter, SAML, OpenID Connect Providers) OR A developer
           provider (your own backend authentication process), while `unauthenticated` identities typically belong to guest users.
 
-        - When Amazon Cognito receives a user request, the service will determine if the request is either `authenticated` or `unauthenticated`, determine which role is associated with that authentication type, and then use the policy attached to that role to response to that request.
+        - When Amazon Cognito receives a user request, the service will determine if the request is either `authenticated` or `unauthenticated` type, determine which role is associated with that authentication type, and then use the policy attached to that role to response to that request.
 
       - SELECT ROLES
 
