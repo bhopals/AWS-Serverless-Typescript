@@ -204,6 +204,7 @@ You can use the cdk bootstrap command to install the bootstrap stack into an env
 #### Fine-grained Access Control options
 
 - Access Control options with Identity Pools
+
   - Guest/Unauthenticated Access - Anonymous access to generic Data
   - Authenticated Access - Same Access Level for all authenticated users
   - RBAC (Role-based access control) - Access based on user role in your system
@@ -211,8 +212,29 @@ You can use the cdk bootstrap command to install the bootstrap stack into an env
     - Choose Role with Rules (`claims` or any other attribute in the Token)
   - Using attributes (of the User) for access control - Access based on user profile attributes or factors decided at runtime (be it a Tag or User Role or Profile or Department)
 
+- SRP (Secure Remote Password) Protocol (A Way to secure password handling)
+  - Verifier-based Protocol
+  - Passwords never travel over the wire
+  - Resistant to several attack vendors
+  - Prefect Forward Secrecy
+- SRP Removes the need to store the passwords in the database, instead SRP allows you to create a Verifier Code
+  from the password and save that in the DB instead of the actual password.
+
+KEYWORDS
+
+- AWS Cognito User Pool - Managed User Directory
+- API Gateway: Three Types of Authorization
+  - Amazaon Cognito User Pools (User Pools Authorizers)
+  - Amazon Cognito Federated Identities (AWS IAM Authorization)
+  - Custom Identity Providers (Custom Authorizer)
+
 REFERENCE
 
 - AWS Typescript Workshop - https://cdkworkshop.com/20-typescript.html
 
 - AWS Construct Libraries - https://docs.aws.amazon.com/cdk/api/latest/docs/aws-construct-library.html
+
+- AWS Cognito
+  - Fine-grained Access Control with Amazon Cognito Identity Pools (https://www.youtube.com/watch?v=tAUmz94O2Qo)
+  - Serverless Authentication and Authorization (https://www.youtube.com/watch?v=VZqG7HjT2AQ)
+  - Building Multi-Tenant Solutions on AWS (https://www.youtube.com/watch?v=mwQ5lipGTBI)
