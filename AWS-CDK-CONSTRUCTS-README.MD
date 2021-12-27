@@ -201,6 +201,16 @@ You can use the cdk bootstrap command to install the bootstrap stack into an env
         - Go to that section
         - Instead of `use-default-role`, select `choose-role-from-token`
 
+#### Fine-grained Access Control options
+
+- Access Control options with Identity Pools
+  - Guest/Unauthenticated Access - Anonymous access to generic Data
+  - Authenticated Access - Same Access Level for all authenticated users
+  - RBAC (Role-based access control) - Access based on user role in your system
+    - Choose Role from Token (User Pool Group)
+    - Choose Role with Rules (`claims` or any other attribute in the Token)
+  - Using attributes (of the User) for access control - Access based on user profile attributes or factors decided at runtime
+
 REFERENCE
 
 - AWS Typescript Workshop - https://cdkworkshop.com/20-typescript.html
