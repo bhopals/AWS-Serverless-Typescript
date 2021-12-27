@@ -209,7 +209,7 @@ You can use the cdk bootstrap command to install the bootstrap stack into an env
   - RBAC (Role-based access control) - Access based on user role in your system
     - Choose Role from Token (User Pool Group)
     - Choose Role with Rules (`claims` or any other attribute in the Token)
-  - Using attributes (of the User) for access control - Access based on user profile attributes or factors decided at runtime
+  - Using attributes (of the User) for access control - Access based on user profile attributes or factors decided at runtime (be it a Tag or User Role or Profile or Department)
 
 REFERENCE
 
