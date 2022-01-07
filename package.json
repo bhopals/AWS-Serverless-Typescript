@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "ts-node": "^10.4.0"
+  },
+  "dependencies": {
+    "jest": "^27.4.7"
   }
 }
