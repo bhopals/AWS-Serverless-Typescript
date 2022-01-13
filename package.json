@@ -3,6 +3,7 @@
     "ts-node": "^10.4.0"
   },
   "dependencies": {
+    "@aws-cdk/aws-s3": "^1.139.0",
     "@types/jest": "^27.4.0",
     "aws-cdk": "^2.5.0",
     "jest": "^27.4.7",
